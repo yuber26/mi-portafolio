@@ -103,144 +103,154 @@ $(function() {
   });
 
   // progressbars
-  var bar = new ProgressBar.Circle(circleprog1, {
-    strokeWidth: 7,
-    easing: 'easeInOut',
-    duration: 1400,
-    delay: 2500,
-    trailWidth: 7,
-    step: function(state, circle) {
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText('');
-      } else {
-        circle.setText(value);
-      }
+var bar = new ProgressBar.Circle(circleprog1, {
+  strokeWidth: 7,
+  easing: 'easeInOut',
+  duration: 1400,
+  delay: 2500,
+  trailWidth: 7,
+  step: function (state, circle) {
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
     }
-  });
+  }
+});
+bar.animate(1);
 
-  bar.animate(1);
-
-  var bar = new ProgressBar.Circle(circleprog2, {
-    strokeWidth: 7,
-    easing: 'easeInOut',
-    duration: 1400,
-    delay: 2600,
-    trailWidth: 7,
-    step: function(state, circle) {
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText('');
-      } else {
-        circle.setText(value);
-      }
+var bar = new ProgressBar.Circle(circleprog2, {
+  strokeWidth: 7,
+  easing: 'easeInOut',
+  duration: 1400,
+  delay: 2600,
+  trailWidth: 7,
+  step: function (state, circle) {
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
     }
-  });
+  }
+});
+bar.animate(0.9);
 
-  bar.animate(0.9);
-
-  var bar = new ProgressBar.Circle(circleprog3, {
-    strokeWidth: 7,
-    easing: 'easeInOut',
-    duration: 1400,
-    delay: 2700,
-    trailWidth: 7,
-    step: function(state, circle) {
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText('');
-      } else {
-        circle.setText(value);
-      }
+var bar = new ProgressBar.Circle(circleprog3, {
+  strokeWidth: 7,
+  easing: 'easeInOut',
+  duration: 1400,
+  delay: 2700,
+  trailWidth: 7,
+  step: function (state, circle) {
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
     }
-  });
+  }
+});
+bar.animate(0.7);
 
-  bar.animate(0.7);
+var bar = new ProgressBar.Line(lineprog1, { // HTML
+  strokeWidth: 1.72,
+  easing: 'easeInOut',
+  duration: 1400,
+  delay: 2800,
+  trailWidth: 1.72,
+  svgStyle: {
+    width: '100%',
+    height: '100%'
+  },
+  step: (state, bar) => {
+    bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+bar.animate(.9); // 90%
 
-  var bar = new ProgressBar.Line(lineprog1, {
-    strokeWidth: 1.72,
-    easing: 'easeInOut',
-    duration: 1400,
-    delay: 2800,
-    trailWidth: 1.72,
-    svgStyle: {
-      width: '100%',
-      height: '100%'
-    },
-    step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + ' %');
-    }
-  });
+var bar = new ProgressBar.Line(lineprog2, { // CSS
+  strokeWidth: 1.72,
+  easing: 'easeInOut',
+  duration: 1400,
+  delay: 2900,
+  trailWidth: 1.72,
+  svgStyle: {
+    width: '100%',
+    height: '100%'
+  },
+  step: (state, bar) => {
+    bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+bar.animate(.95); // 95%
 
-  bar.animate(.9);
+var bar = new ProgressBar.Line(lineprog3, { // JS
+  strokeWidth: 1.72,
+  easing: 'easeInOut',
+  duration: 1400,
+  delay: 3000,
+  trailWidth: 1.72,
+  svgStyle: {
+    width: '100%',
+    height: '100%'
+  },
+  step: (state, bar) => {
+    bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+bar.animate(.85); // <<-- CAMBIO: De .75 a .85 para JS
 
-  var bar = new ProgressBar.Line(lineprog2, {
-    strokeWidth: 1.72,
-    easing: 'easeInOut',
-    duration: 1400,
-    delay: 2900,
-    trailWidth: 1.72,
-    svgStyle: {
-      width: '100%',
-      height: '100%'
-    },
-    step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + ' %');
-    }
-  });
+var bar = new ProgressBar.Line(lineprog4, { // PHP
+  strokeWidth: 1.72,
+  easing: 'easeInOut',
+  duration: 1400,
+  delay: 3100,
+  trailWidth: 1.72,
+  svgStyle: {
+    width: '100%',
+    height: '100%'
+  },
+  step: (state, bar) => {
+    bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+bar.animate(.85); // <<-- CAMBIO: De .65 a .85 para PHP
 
-  bar.animate(.95);
+var bar = new ProgressBar.Line(lineprog5, { // WordPress
+  strokeWidth: 1.72,
+  easing: 'easeInOut',
+  duration: 1400,
+  delay: 3200,
+  trailWidth: 1.72,
+  svgStyle: {
+    width: '100%',
+    height: '100%'
+  },
+  step: (state, bar) => {
+    bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+bar.animate(1.0); // <<-- CAMBIO: De .85 a 1.0 para WordPress
 
-  var bar = new ProgressBar.Line(lineprog3, {
-    strokeWidth: 1.72,
-    easing: 'easeInOut',
-    duration: 1400,
-    delay: 3000,
-    trailWidth: 1.72,
-    svgStyle: {
-      width: '100%',
-      height: '100%'
-    },
-    step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + ' %');
-    }
-  });
-
-  bar.animate(.75);
-
-  var bar = new ProgressBar.Line(lineprog4, {
-    strokeWidth: 1.72,
-    easing: 'easeInOut',
-    duration: 1400,
-    delay: 3100,
-    trailWidth: 1.72,
-    svgStyle: {
-      width: '100%',
-      height: '100%'
-    },
-    step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + ' %');
-    }
-  });
-
-  bar.animate(.65);
-
-  var bar = new ProgressBar.Line(lineprog5, {
-    strokeWidth: 1.72,
-    easing: 'easeInOut',
-    duration: 1400,
-    delay: 3200,
-    trailWidth: 1.72,
-    svgStyle: {
-      width: '100%',
-      height: '100%'
-    },
-    step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + ' %');
-    }
-  });
-
-  bar.animate(.85);
+// ========= BLOQUE AÑADIDO PARA 'REDES E INFRAESTRUCTURA' =========
+var bar = new ProgressBar.Line(lineprog6, {
+  strokeWidth: 1.72,
+  easing: 'easeInOut',
+  duration: 1400,
+  delay: 3300, // Aumentamos el delay para que se anime después del anterior
+  trailWidth: 1.72,
+  svgStyle: {
+    width: '100%',
+    height: '100%'
+  },
+  step: (state, bar) => {
+    bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+bar.animate(.95); // <<-- AÑADIDO: 95% para Redes e Infraestructura
+// =================== FIN DEL BLOQUE AÑADIDO ====================
 
   // Contact form
   $('.art-input').keyup(function() {

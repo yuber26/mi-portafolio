@@ -2819,4 +2819,44 @@ html.is-animating .fade-left {
   }
 }
 
+/* ===== AJUSTES PERSONALIZADOS (v5 - Ajuste Fino Contadores) ===== */
+ 
+ /* 1. Reduce el tamaño del título del banner principal y lo hace responsive */
+ .titulo-banner-personalizado {
+   font-size: 44px;
+   line-height: 1.2;
+ }
+ @media (max-width: 768px) {
+   .titulo-banner-personalizado {
+     font-size: 34px;
+   }
+ }
+ 
+ /* 2. Centra el contenido de los contadores (Método Forzado y Definitivo) */
+ .art-counters .col-md-3 {
+   text-align: center !important;
+ }
+ .art-counter-box {
+   margin-left: 20px;
+   margin-right: 20px;
+ }
+ 
+ /* 3. Agrega espacio superior a las secciones principales */
+ .art-section-title {
+   margin-top: 30px;
+ }
+
+ /* 4. AÑADIDO: Cursor parpadeante para el texto animado */
+.txt-rotate .wrap::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.art-btn { border-radius: 5px; /* Ajusta este valor para más o menos redondeo */ }
 /*# sourceMappingURL=style.css.map */
