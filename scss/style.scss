@@ -89,3 +89,16 @@ p.s. I am available for Freelance hire (UI design, web development). mail: mille
 @import 'content';
 @import 'burger';
 @import 'transitions';
+
+/* --- Estilos Personalizados para Efecto Hover en Tarjetas --- */
+
+// Estado normal de la tarjeta
+.art-service-icon-box {
+  transition: all 0.3s ease-in-out;
+}
+
+// Estado de la tarjeta cuando el cursor está encima
+.art-service-icon-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 25px -10px rgba(0, 0, 0, 0.2);
+}

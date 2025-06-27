@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* -------------------------------------------
 
 Name: 		Arter
@@ -81,8 +80,8 @@ p.s. I am available for Freelance hire (UI design, web development). mail: mille
 
 --------------------------------------------*/
 /*
-$main-color: #1E90FF; Azul Eléctrico
-$main-color: #48D1CC; Cian/Turquesa Moderno
+$main-color: #007BFF;
+$main-color: #f44336;
 $main-color: #4CAF50;
 $main-color: #64B5F6;
 */
@@ -219,7 +218,7 @@ a:focus {
 blockquote {
   margin-top: 30px;
   margin-bottom: 30px;
-  background: #1E90FF;
+  background: #f44336;
   color: rgb(25, 25, 35);
   padding: 30px;
   padding-left: 35px;
@@ -271,7 +270,7 @@ blockquote:after {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: solid 2px #1E90FF;
+  border: solid 2px #f44336;
   background: transparent;
   box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
 }
@@ -306,10 +305,10 @@ link
   transform: translateX(5px);
 }
 .art-link.art-color-link {
-  color: #1E90FF;
+  color: #f44336;
 }
 .art-link.art-color-link:hover {
-  color: #1E90FF;
+  color: #f44336;
   text-shadow: 0 0 3px rgba(250, 250, 252, 0.4);
   transform: translateX(5px);
 }
@@ -367,7 +366,7 @@ button
   text-transform: uppercase;
   box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
   color: rgb(32, 32, 42);
-  background: #1E90FF;
+  background: #f44336;
   letter-spacing: 1.5px;
   font-weight: 600;
   display: inline-flex;
@@ -525,7 +524,7 @@ app marcup
   stroke: rgb(25, 25, 35);
 }
 .art-preloader-load path:last-child {
-  stroke: #1E90FF;
+  stroke: #f44336;
 }
 
 /* ----- scroll frame ----- */
@@ -923,7 +922,7 @@ info bar
   right: 5px;
   height: 15px;
   width: 15px;
-  background: #1E90FF;
+  background: #f44336;
   border-radius: 50%;
   z-index: 0;
   transition: 0.4s ease-in-out;
@@ -991,7 +990,7 @@ info bar
   transition: 0.4s ease-in-out;
 }
 .art-info-bar .art-name:hover a {
-  color: #1E90FF;
+  color: #f44336;
 }
 .art-info-bar .art-lang-skills {
   display: flex;
@@ -1053,7 +1052,7 @@ info bar
   content: "\f00c";
   margin-right: 5px;
   font-size: 9px;
-  color: #1E90FF;
+  color: #f44336;
   margin-right: 10px;
 }
 .art-info-bar .art-links-frame {
@@ -1089,14 +1088,14 @@ info bar
   stroke: rgb(25, 25, 35);
 }
 .art-line-progress path:last-child {
-  stroke: #1E90FF;
+  stroke: #f44336;
 }
 
 .art-cirkle-progress path:first-child {
   stroke: rgb(25, 25, 35);
 }
 .art-cirkle-progress path:last-child {
-  stroke: #1E90FF;
+  stroke: #f44336;
 }
 
 /* ------------------------------
@@ -1286,7 +1285,7 @@ menu bar
   transition: 0.4s ease-in-out;
 }
 .art-menu-bar .art-language-change li.art-active-lang {
-  background-color: #1E90FF;
+  background-color: #f44336;
   box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
 }
 .art-menu-bar .art-language-change li.art-active-lang a {
@@ -1413,7 +1412,7 @@ content
 }
 .art-code i {
   font-style: normal;
-  color: #1E90FF;
+  color: #f44336;
 }
 
 /* ----- counters ----- */
@@ -1428,14 +1427,14 @@ content
   min-width: 60px;
 }
 .art-counter-frame .art-counter-box .art-counter {
-  color: #1E90FF;
+  color: #f44336;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   font-size: 22px;
 }
 .art-counter-frame .art-counter-box .art-counter-plus {
   margin-left: 3px;
-  color: #1E90FF;
+  color: #f44336;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   font-size: 22px;
@@ -1491,7 +1490,7 @@ content
   padding: 2px;
   width: 200px;
   text-align: center;
-  background: #1E90FF;
+  background: #f44336;
 }
 .art-price .art-price-body {
   position: relative;
@@ -1515,7 +1514,7 @@ content
 }
 .art-price .art-price-body .art-price-cost .art-number {
   font-size: 32px;
-  color: #1E90FF;
+  color: #f44336;
   font-weight: 600;
   margin-bottom: 0;
 }
@@ -1547,7 +1546,7 @@ content
   content: "\f00c";
   margin-right: 5px;
   font-size: 9px;
-  color: #1E90FF;
+  color: #f44336;
 }
 .art-price .art-price-body .art-price-list li.art-empty-item {
   opacity: 0.3;
@@ -1558,7 +1557,7 @@ content
   content: "\f00d";
   margin-right: 5px;
   font-size: 9px;
-  color: #1E90FF;
+  color: #f44336;
 }
 .art-price .art-price-body .art-link {
   margin: 0;
@@ -1609,7 +1608,7 @@ content
   background: rgb(32, 32, 42);
   border-radius: 30px;
   display: flex;
-  color: #1E90FF;
+  color: #f44336;
 }
 .art-testimonial .art-testimonial-footer .art-star-rate li {
   list-style-type: none;
@@ -1646,7 +1645,7 @@ content
 }
 .art-slider-navigation .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 20px;
-  background-color: #1E90FF;
+  background-color: #f44336;
   opacity: 1;
 }
 .art-slider-navigation .art-slider-nav-frame {
@@ -1699,7 +1698,7 @@ content
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: solid 3px #1E90FF;
+  border: solid 3px #f44336;
   background: rgb(30, 30, 40);
   box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
 }
@@ -1774,10 +1773,10 @@ content
   border-left: solid 50px rgb(32, 32, 42);
 }
 .art-form-field textarea.art-active {
-  border-color: #1E90FF;
+  border-color: #f44336;
 }
 .art-form-field textarea:focus {
-  border-color: #1E90FF;
+  border-color: #f44336;
 }
 
 .art-contact-form .art-input:focus {
@@ -1786,7 +1785,7 @@ content
 
 .art-contact-form .art-input.art-active + label,
 .art-contact-form .art-input:focus + label {
-  background: #1E90FF;
+  background: #f44336;
   color: rgb(32, 32, 42);
 }
 
@@ -1906,7 +1905,7 @@ content
   padding: 0 5px;
 }
 .art-pagination .art-pagination-center a.art-active-pag {
-  color: #1E90FF;
+  color: #f44336;
 }
 .art-pagination .art-link {
   margin: 0;
@@ -2174,7 +2173,7 @@ portfolio
 }
 
 .fancybox-progress {
-  background: #1E90FF;
+  background: #f44336;
   z-index: 1000000000000000000;
 }
 
@@ -2188,7 +2187,7 @@ portfolio
 }
 
 .fancybox-thumbs__list a:before {
-  border-color: #1E90FF;
+  border-color: #f44336;
   transition: 0.4s ease-in-out;
 }
 
@@ -2462,13 +2461,4 @@ html.is-animating .fade-left {
   .transition-fade .art-price.art-popular-price {
     transform: scale(1);
   }
-}
-/* --- Estilos Personalizados para Efecto Hover en Tarjetas --- */
-.art-service-icon-box {
-  transition: all 0.3s ease-in-out;
-}
-
-.art-service-icon-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 15px 25px -10px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=style.css.map */
