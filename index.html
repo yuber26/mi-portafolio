@@ -305,7 +305,7 @@
         <div class="art-counter-box">
           <!-- counter number -->
           <!-- CAMBIO: Años de Experiencia -->
-          <span class="art-counter">6</span><span class="art-counter-plus">+</span>
+          <span class="art-counter">5</span><span class="art-counter-plus">+</span>
         </div>
         <!-- counter end -->
         <!-- title -->
@@ -1057,16 +1057,12 @@
     <!-- app wrapper end -->
 
     <!-- preloader -->
-    <div class="art-preloader">
-      <!-- preloader content -->
-      <div class="art-preloader-content">
-        <!-- title -->
-        <h4>Bienvenidos a </h4>
-        <!-- progressbar -->
-        <div id="preloader" class="art-preloader-load"></div>
-      </div>
-      <!-- preloader content end -->
-    </div>
+<div class="art-preloader">
+  <div class="art-preloader-content">
+    <h4 id="preloader-typing-text" class="art-code-style"></h4>
+    <div id="preloader-subtitle" class="art-preloader-subtitle">Desarrollador Web &amp; Especialista en Redes</div>
+  </div>
+  </div>
     <!-- preloader end -->
 
   </div>
@@ -1096,6 +1092,44 @@
   <!-- main js -->
   <script src="js/main.js"></script>
 
+<!-- Script para el efecto de tipeo del preloader -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // --- Elementos que controlamos ---
+        const typingTextElement = document.getElementById('preloader-typing-text');
+        const subtitleElement = document.getElementById('preloader-subtitle');
+        const preloader = document.querySelector('.art-preloader'); // <-- NUEVO: Obtenemos el contenedor principal
+
+        const textToType = '<Yuber González/>';
+        let i = 0;
+
+        function typeWriter() {
+          if (i < textToType.length) {
+            typingTextElement.innerHTML += textToType.charAt(i);
+            i++;
+            typingTextElement.classList.add('typing-cursor');
+            setTimeout(typeWriter, 120);
+          } else {
+            // --- Animación terminada ---
+            typingTextElement.classList.remove('typing-cursor');
+            typingTextElement.style.borderRight = '3px solid var(--main-color)';
+
+            // 1. Aparece el subtítulo
+            setTimeout(() => {
+              subtitleElement.style.opacity = '1';
+
+              // 2. <-- NUEVO: Después de una pausa, ocultamos todo el preloader
+              setTimeout(() => {
+                preloader.classList.add('art-preloader-hidden');
+              }, 1300); // Espera 1300ms antes de ocultar
+
+            }, 500); // Espera 500ms para mostrar el subtítulo
+          }
+        }
+        
+        typeWriter();
+      });
+    </script>
 </body>
 
 </html>
