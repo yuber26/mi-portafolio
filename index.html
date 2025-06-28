@@ -1057,17 +1057,24 @@
     <!-- app wrapper end -->
 
     <!-- preloader -->
-    <div class="art-preloader">
-      <!-- preloader content -->
-      <div class="art-preloader-content">
-        <!-- title -->
-        <h4>Artur Carter</h4>
-        <!-- progressbar -->
-        <div id="preloader" class="art-preloader-load"></div>
+<!-- preloader -->
+      <div class="art-preloader">
+        <!-- preloader content -->
+        <div class="art-preloader-content">
+
+          <!-- Título Original (lo ocultaremos con CSS) -->
+          <h4 class="art-original-title">Yuber Gonzalez</h4> 
+          
+          <!-- Barra de Progreso Original (la ocultaremos con CSS) -->
+          <div id="preloader" class="art-preloader-load"></div>
+          
+          <!-- NUESTRO TÍTULO ANIMADO -->
+          <h4 class="art-typing-title"></h4>
+
+        </div>
+        <!-- preloader content end -->
       </div>
-      <!-- preloader content end -->
-    </div>
-    <!-- preloader end -->
+      <!-- preloader end -->
 
   </div>
   <!-- app end -->
@@ -1096,6 +1103,18 @@
   <!-- main js -->
   <script src="js/main.js"></script>
 
+<!-- Script para inicializar el tipeo (Método Seguro) -->
+    <script>
+      // Este script se ejecuta después de que todos los plugins se han cargado
+      var typed = new Typed('.art-typing-title', {
+        strings: ['&lt;Yuber González/&gt;'],
+        typeSpeed: 90,
+        loop: false,
+        showCursor: true,
+        cursorChar: "|",
+        contentType: 'html'
+      });
+    </script>
 </body>
 
 </html>
